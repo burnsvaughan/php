@@ -1,0 +1,31 @@
+    <?php
+ 
+    //Get
+    if(isset($_GET['username'])){
+        echo "<h1>username: {$_GET['username']}</h1>";
+        echo "<h1>lastname: {$_GET['lastname']}</h1>";
+    }
+
+    if(isset($_POST["username"])){
+        echo $_POST["username"];
+    }
+   
+    ?>
+
+
+    <html>
+
+    <body>
+
+    <form action="index.php" method ="POST">
+    <label for="username">Username</label>
+    <input type="text" name="username">
+    <input type="password" name="password">
+
+    <button type="submit">Send</button>
+
+    </form>
+
+    </body>
+
+    </html>
