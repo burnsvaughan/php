@@ -1,19 +1,20 @@
     <?php
 
    require('./includes/topscript.php');
+
     ?>
 
 
     <html>
+    <head></head>
 
     <body>
-        <?php require('includes/head.php') ?>
         <div class="container">
             <?php include('includes/header.php') ?>
-            
+            <?php require('includes/head.php') ?>
           
             <section>
-                <h1>HomePage</h1>
+                <h1>Contact</h1>
             </section>
         </div>
 
