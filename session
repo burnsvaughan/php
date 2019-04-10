@@ -1,0 +1,26 @@
+    <?php
+    session_start();
+
+    $_SESSION["amazon_product"] = "Macbook Air";
+    session_unset();
+
+    // session_destroy();
+   
+    ?>
+
+
+    <html>
+
+    <body>
+
+    <?php
+    if(isset($_SESSION["amazon_product"])){
+        echo $_SESSION["amazon_product"];
+    } else {
+       echo "Sorry No Session for this user";
+    }
+    ?>
+   
+    </body>
+
+    </html>
